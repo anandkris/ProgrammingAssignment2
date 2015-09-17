@@ -1,7 +1,9 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## This function creates a list of 4 objects which contains the original matrix and 
+## a placeholder for he inverse. This needs to be used in conjunction with 
+## cacheSolve function
 
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
@@ -19,7 +21,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 
-## Write a short comment describing this function
+## Computes the inverse of a matrix. If the inverse is already present, it will 
+## use that. Otherwise, it will create a new one. For large matrices this saves
+## significant amount of time
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
